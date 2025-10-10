@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Holographic 4D Tic Tac Toe</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="stage">
+    <header class="hud">
+      <h1 class="logo">Tic Tac Toe</h1>
+      <div class="controls">
+        <div id="message" class="message" aria-live="polite">X's Turn</div>
+        <button id="restartBtn" class="btn">Restart</button>
+      </div>
+    </header>
+
+    <section class="arena">
+      <!-- holographic pedestal -->
+      <div class="pedestal">
+        <div class="board" id="board" role="grid" aria-label="Tic Tac Toe board">
+          <!-- 9 cells -->
+          <button class="cell" data-cell role="gridcell" aria-label="cell 1"></button>
+          <button class="cell" data-cell role="gridcell" aria-label="cell 2"></button>
+          <button class="cell" data-cell role="gridcell" aria-label="cell 3"></button>
+
+          <button class="cell" data-cell role="gridcell" aria-label="cell 4"></button>
+          <button class="cell" data-cell role="gridcell" aria-label="cell 5"></button>
+          <button class="cell" data-cell role="gridcell" aria-label="cell 6"></button>
+
+          <button class="cell" data-cell role="gridcell" aria-label="cell 7"></button>
+          <button class="cell" data-cell role="gridcell" aria-label="cell 8"></button>
+          <button class="cell" data-cell role="gridcell" aria-label="cell 9"></button>
+        </div>
+
+        <!-- winning line (positioned and rotated by JS) -->
+        <div id="winLine" class="win-line" aria-hidden="true"></div>
+
+        <!-- subtle floor reflection -->
+        <div class="ground-reflection"></div>
+      </div>
+    </section>
+
+    <footer class="credit">Designed &amp; coded By Mr. Sourav Maji</footer>
+  </main>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

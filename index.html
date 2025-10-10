@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tic Tac Toe — Mr. Sourav</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="wrap">
+    <h1>Tic Tac Toe</h1>
+
+    <section class="status">
+      <div id="turn">Turn: <span id="player">X</span></div>
+      <div id="scoreboard">
+        <div>X: <span id="scoreX">0</span></div>
+        <div>O: <span id="scoreO">0</span></div>
+        <div>Draws: <span id="scoreD">0</span></div>
+      </div>
+    </section>
+
+    <section class="board" id="board">
+      <button class="cell" data-index="0"></button>
+      <button class="cell" data-index="1"></button>
+      <button class="cell" data-index="2"></button>
+      <button class="cell" data-index="3"></button>
+      <button class="cell" data-index="4"></button>
+      <button class="cell" data-index="5"></button>
+      <button class="cell" data-index="6"></button>
+      <button class="cell" data-index="7"></button>
+      <button class="cell" data-index="8"></button>
+    </section>
+
+    <div class="controls">
+      <button id="restart">Restart Round</button>
+      <button id="resetAll">Reset All</button>
+    </div>
+
+    <div id="message" class="message hidden"></div>
+
+    <footer class="credits">Simple Tic Tac Toe — Local 2 players</footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
